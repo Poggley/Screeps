@@ -12,4 +12,3 @@ function Harvester() {
 
 Harvester.inheritsFrom(Creep);        
 
-

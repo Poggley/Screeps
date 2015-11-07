@@ -1,6 +1,7 @@
 // Main code
 
 var spawnController = require('spawnController');
+var flagCreate = require('flagCreate');
 
 // Iterate over spawns
 for (var spawn_name in Game.spawns) {

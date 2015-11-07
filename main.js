@@ -11,5 +11,5 @@ spawnController = require('spawnController');
 for (spawn_name in Game.spawns) {
   // Set up each spawn.
 	spawn = Game.spawns[spawn_name];
-	makeCreep(spawn);
+	spawnController.makeCreep(spawn);
 }

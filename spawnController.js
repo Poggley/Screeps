@@ -6,6 +6,9 @@ var harvester;
 // Includes.
 harvester = require('harvester');
 
+// Exports.
+module.exports = makeCreep;
+
 // spawnController.
 makeCreep = function (spawn) {
   // Decides which creep to make and creates it.
@@ -15,4 +18,5 @@ makeCreep = function (spawn) {
   // makeCreep
   spawn.createCreep(creep.body, null);
 };
+
 

@@ -4,7 +4,7 @@ var makeCreep;
 var harvester;
 
 // Includes.
-harvester = requires('harvester');
+harvester = require('harvester');
 
 // spawnController.
 makeCreep = function (spawn) {

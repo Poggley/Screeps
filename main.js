@@ -5,7 +5,7 @@ var spawn;
 var spawnController;
 
 // Includes.
-spawnController = requires('spawnController');
+spawnController = require('spawnController');
 
 // Main.
 for (spawn_name in Game.spawns) {

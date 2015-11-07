@@ -1,22 +1,12 @@
-// Functions governing the spawn.
+// Functions governing the spawn
 
-// Global Variables.
-var harvester;
-
-// Includes.
-harvester = require('harvester');
-
-// spawnController.
 module.exports = {
+  // Decides which creep to make and creates it
   makeCreep: function (spawn) {
-    // Decides which creep to make and creates it.
+    var creep_role = 'harvester'; // TODO get this from elsewhere
+    var creep_type = require(creep_type);
+    var proto = new creep_type.creepProto();
 
-    // Local Variables
-    var creep;
-
-    // makeCreep
-    creep = new harvester.Harvester(); //temp
-    spawn.createCreep(creep.bodyparts, null);
+    spawn.createCreep(proto.bodyparts, null, { role : creep_role });
   }
 };
-

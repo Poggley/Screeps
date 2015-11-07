@@ -1,16 +1,22 @@
-// Harvester screep model.
+// Harvester screep model
 
-// Global Variables.
-var common;
+var common = require('common');
 
-// Includes.
-common = require('common');
-
-// Harvester.
-function Harvester() {
+// Harvester
+function creepProto() {
   this.bodyparts = [WORK, CARRY, MOVE];
+
+  this.action = function() {
+    	if(creep.carry.energy < creep.carryCapacity) {
+    		var sources = creep.room.find(FIND_SOURCES);
+    		creep.moveTo(sources[0]);
+    		creep.harvest(sources[0]);
+    	}
+    	else {
+    		creep.moveTo(Game.spawns.Spawn1);
+    		creep.transferEnergy(Game.spawns.Spawn1)
+    	}
+  }
 };
 
-Harvester.inheritsFrom(Creep);
-
-module.exports = { Harvester };
+module.exports = { creepProto };

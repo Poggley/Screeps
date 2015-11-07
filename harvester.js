@@ -5,8 +5,8 @@ var common;
 // Includes.
 common = require('common');
 
-// harvester.
-function harvester() {};
-harvester.inheritsFrom(creep);        
-harvester.prototype.body = [WORK, CARRY, MOVE];
+// Harvester.
+function Harvester() {};
+Harvester.inheritsFrom(Creep);        
+Harvester.prototype.body = [WORK, CARRY, MOVE];
 

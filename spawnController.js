@@ -1,4 +1,5 @@
 // Functions governing the spawn.
+
 // Global Variables.
 var harvester;
 
@@ -9,11 +10,13 @@ harvester = require('harvester');
 module.exports = {
   makeCreep: function (spawn) {
     // Decides which creep to make and creates it.
+
     // Local Variables
     var creep;
-    creep = new harvester();
+
     // makeCreep
-    spawn.createCreep(creep.body, null);
+    creep = new harvester.Harvester(); //temp
+    spawn.createCreep(creep.bodyparts, null);
   }
 };
 

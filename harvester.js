@@ -1,4 +1,5 @@
 // Harvester screep model.
+
 // Global Variables.
 var common;
 
@@ -7,8 +8,9 @@ common = require('common');
 
 // Harvester.
 function Harvester() {
-  this.body = [WORK, CARRY, MOVE];
+  this.bodyparts = [WORK, CARRY, MOVE];
 };
 
-Harvester.inheritsFrom(Creep);        
+Harvester.inheritsFrom(Creep);
 
+module.exports = { Harvester };

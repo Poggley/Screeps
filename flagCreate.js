@@ -1,6 +1,6 @@
 // Creates flags used for the organisation of screeps
 
-flagCreate = function (spawn) {
+var flagCreate = function (spawn) {
     if(!spawn.room.lookForAt('flag',25,25)[0]) {
         spawn.room.createFlag(25,25);
     }

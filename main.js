@@ -4,8 +4,10 @@ var spawnController = require('spawnController');
 
 // Iterate over spawns
 for (var spawn_name in Game.spawns) {
-  // Set behaviour of spawn
   var spawn = Game.spawns[spawn_name];
+  // Create flags used for the organisation of screeps
+  flagCreate(spawn);
+  // Set behaviour of spawn
   spawnController.makeCreep(spawn);
 }
 

@@ -3,7 +3,6 @@
 * Files should have a single purpose clearly stated at the top of the file.
 * This purpose should be simple enough to explain in one line.
 * Object behavior should depend only on game state and it's memory.
-* Comment liberally.
 
 *** General Tips ***
 
@@ -20,4 +19,3 @@
 
 * Comment with //.
 * Comment before every object and function.
-* Comment inside every loop.

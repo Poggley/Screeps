@@ -1,9 +1,7 @@
 // Harvester screep model
 
-var common = require('common');
-
 // Harvester
-function creepProto() {
+function creepProto(creep) {
   this.bodyparts = [WORK, CARRY, MOVE];
 
   this.action = function() {

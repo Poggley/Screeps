@@ -13,3 +13,4 @@ for (spawn_name in Game.spawns) {
 	spawn = Game.spawns[spawn_name];
 	spawnController.makeCreep(spawn);
 }
+

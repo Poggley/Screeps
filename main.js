@@ -1,13 +1,12 @@
 // Main code
 
 var spawnController = require('spawnController');
-var flagCreate = require('flagCreate');
 
 // Iterate over spawns
 for (var spawn_name in Game.spawns) {
   var spawn = Game.spawns[spawn_name];
   // Create flags used for the organisation of screeps
-  flagCreate(spawn);
+  spawnController.flagCreate(spawn);
   // Set behaviour of spawn
   spawnController.makeCreep(spawn);
 }

@@ -1,0 +1,25 @@
+*** Philosophy ***
+
+* Object oriented style
+* Files should have a single purpose clearly stated at the top of the file.
+* This purpose should be simple enough to explain in one line.
+* Object behavior should depend only on game state and it's memory.
+* Comment liberally.
+
+*** General Tips ***
+
+* List local variables at the top of each function.
+* Variables use snakecase and function names camelcase.
+* Object types are capitalized. 
+* No repeating blocks of code.
+* No line over 80 characters.
+* Semicolon after each }.
+* Single quotes only.
+* Tab is two spaces.
+* Creep names should never be specified.
+
+*** Comments ***
+
+* Comment with //.
+* Comment before every object and function.
+* Comment inside every loop.

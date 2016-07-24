@@ -1,7 +1,7 @@
 // Defender screep model
 
 // Defender
-function CreepProto(creep) {
+function creepProto(creep) {
   this.bodyparts = [TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, MOVE, MOVE, ATTACK, MOVE];
 
   this.rest = function () {

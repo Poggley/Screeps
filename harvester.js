@@ -12,7 +12,7 @@ function creepProto(creep) {
     }
     else {
       creep.moveTo(Game.spawns.Spawn1);
-      creep.transferEnergy(Game.spawns.Spawn1)
+      creep.transferEnergy(Game.spawns.Spawn1);
     }
   }
 };

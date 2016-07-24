@@ -1,7 +1,7 @@
 // Generic creep model
 
 // Locals
-var bodyPartWeightings = {
+var bodypartWeightings = {
   MOVE: 50,
   WORK: 100,
   CARRY: 50,
@@ -15,7 +15,7 @@ var bodyPartWeightings = {
 function totalEnergy(creepProto) {
   var totalEnergy = 0;
   for (var part in creepProto.bodyparts) {
-    totalEnergy += bodyPartWeightings[part];
+    totalEnergy += bodypartWeightings[part];
   };
 
   return totalEnergy;

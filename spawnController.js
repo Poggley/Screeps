@@ -1,17 +1,17 @@
 // Functions governing the spawn
 var chooseCreep = function (spawn) {
-  var creep_role = 'harvester';// TODO get this from elsewhere
-  return creep_role;
+  var creepRole = 'harvester';// TODO get this from elsewhere
+  return creepRole;
 };
 
 module.exports = {
   // Decides which creep to make and creates it
   makeCreep: function (spawn) {
-    var creep_role = chooseCreep(spawn); 
-    var creep_type = require(creep_role);
-    var proto = new creep_type.creepProto();
+    var creepRole = chooseCreep(spawn); 
+    var creepType = require(creepRole);
+    var proto = new creepType.creepProto();
 
-    spawn.createCreep(proto.bodyparts, null, { role: creep_role });
+    spawn.createCreep(proto.bodyparts, null, { role: creepRole });
   },
 
   // Sets up flags for that spawn

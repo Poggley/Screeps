@@ -2,7 +2,7 @@
 var chooseCreep = function (spawn) {
   var creep_role = 'harvester';// TODO get this from elsewhere
   return creep_role;
-}
+};
 
 module.exports = {
   // Decides which creep to make and creates it

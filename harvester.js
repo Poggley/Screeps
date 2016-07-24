@@ -1,8 +1,10 @@
 // Harvester screep model
+var baseCreep = require('basecreep');
 
 // Harvester
 function creepProto(creep) {
   this.bodyparts = [WORK, CARRY, MOVE];
+  this.totalenergy = baseCreep.totalenergy(this);
 
   this.action = function () {
     if (creep.carry.energy < creep.carryCapacity) {

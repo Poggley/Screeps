@@ -1,8 +1,10 @@
 // Defender screep model
+var baseCreep = require('basecreep');
 
 // Defender
 function creepProto(creep) {
   this.bodyparts = [TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, MOVE, MOVE, ATTACK, MOVE];
+  this.totalenergy = baseCreep.totalenergy(this);
 
   this.rest = function () {
     if (creep.hits < creep.hitsMax) {

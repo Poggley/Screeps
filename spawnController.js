@@ -1,4 +1,8 @@
 // Functions governing the spawn
+var chooseCreep = function (spawn) {
+  var creep_role = 'harvester';// TODO get this from elsewhere
+  return creep_role;
+};
 
 module.exports = {
   // Decides which creep to make and creates it
@@ -29,10 +33,5 @@ module.exports = {
       healFlag = spawn.room.lookForAt('flag', 21, 25)[0];
       spawn.memory.healFlag = healFlag;
     }
-  },
-
-  chooseCreep: function (spawn) {
-    var creep_role = 'harvester';// TODO get this from elsewhere
-    return creep_role;
   }
 };
